@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "commitSha": "e45ecf8d79344b91a22711d8ec3e807235e01932",
+  "branch": "main",
+  "remoteUrl": "https://github.com/bonjour-kua/kua-demo-multi-choix-entrepots-5b0fa.git",
+  "builtAt": "2026-05-11T21:53:52Z",
+  "sections": [
+    "Header",
+    "Hero",
+    "About",
+    "Services",
+    "Gallery",
+    "Faq",
+    "Contact",
+    "Footer"
+  ],
+  "checkPassed": true,
+  "checkRunHash": "9b54c6495a9031d289442efff9c7a71ec8c795b8",
+  "warnings": [
+    "Gate 7: SOFT WARN — no Testimonials file exists (false positive pattern match)",
+    "Gate 8: SOFT WARN — 20 placements for 18 photos (MVP level, adequate for first build)"
+  ]
+}
