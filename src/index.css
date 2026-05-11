@@ -1,34 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/**
- * Design tokens — Replit Agent fills these from `_inputs/lead.json.palette`
- * + the direction picked in `theme-variants.md`. Components NEVER hardcode
- * color values; they use `text-primary`, `bg-background`, etc. (mapped in
- * tailwind.config.js).
- */
 @layer base {
   :root {
-    /* RGB triples — Tailwind's `<alpha-value>` syntax requires this format. */
     --background: 255 255 255;
-    --foreground: 15 23 42;
-    --primary: 0 0 0;
+    --foreground: 27 27 27;
+    --primary: 20 53 107;
     --primary-foreground: 255 255 255;
-    --accent: 0 0 0;
-    --accent-foreground: 255 255 255;
-    --muted: 241 245 249;
+    --accent: 228 206 79;
+    --accent-foreground: 20 53 107;
+    --muted: 248 250 252;
     --muted-foreground: 100 116 139;
     --border: 226 232 240;
   }
 
-  /* Global resets / smoothing */
   * {
-    border-color: rgb(var(--border));
+    box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    font-family: theme('fontFamily.sans');
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-[#e4ce4f] text-[#14356b] font-bold uppercase tracking-widest text-sm min-h-12 transition-all duration-200 hover:bg-[#14356b] hover:text-[#e4ce4f] border-2 border-[#e4ce4f];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-bold uppercase tracking-widest text-sm min-h-12 transition-all duration-200 hover:bg-white hover:text-[#14356b];
+  }
+
+  .btn-primary-dark {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-[#14356b] text-[#e4ce4f] font-bold uppercase tracking-widest text-sm min-h-12 transition-all duration-200 hover:bg-[#e4ce4f] hover:text-[#14356b] border-2 border-[#14356b];
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-[#e4ce4f];
+  }
+
+  .section-heading {
+    @apply font-display text-4xl lg:text-5xl xl:text-6xl uppercase leading-none;
   }
 }

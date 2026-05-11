@@ -3,9 +3,6 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      // CSS-vars-driven design tokens. The skill / Replit Agent fills these
-      // in `src/index.css` from `_inputs/lead.json.palette` — do NOT hardcode
-      // hex values in components.
       colors: {
         background: 'rgb(var(--background) / <alpha-value>)',
         foreground: 'rgb(var(--foreground) / <alpha-value>)',
@@ -24,9 +21,9 @@ export default {
         border: 'rgb(var(--border) / <alpha-value>)',
       },
       fontFamily: {
-        // Replace with the typography choice from theme-variants.md.
-        sans: ['system-ui', 'sans-serif'],
-        display: ['system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Bebas Neue', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Courier New', 'monospace'],
       },
     },
   },
