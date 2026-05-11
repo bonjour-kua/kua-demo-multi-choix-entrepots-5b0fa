@@ -1,0 +1,28 @@
+{
+  "company_name": "Multi-Choix Entrepôts",
+  "slug": "multi-choix-entrepots-5b0fa",
+  "facebook_url": "https://www.facebook.com/profile.php?id=61559767420969",
+  "description": "Location d'espaces d'entreposage sécurisés en format 8×10, 10×10 et 10×20. Locaux propres, éclairés, chauffés en hiver, barrés et accessibles 24h/7.",
+  "industry": "Location d'espaces d'entreposage",
+  "sector": "Location d'espaces d'entreposage",
+  "phone": "+1-418-222-9895",
+  "french_phrases": [
+    "Locaux sécurisés, accessibles 24h sur 24, 7 jours sur 7",
+    "Formats disponibles : 8×10, 10×10 et 10×20",
+    "Chauffé en hiver, éclairé intérieur et extérieur"
+  ],
+  "palette": {
+    "dominant": [
+      "#e4ce4f",
+      "#14356b"
+    ],
+    "vibrant": "#f4dc44",
+    "dark_vibrant": "#14356b",
+    "accent_on_dark": "#e4ce4f",
+    "accent_on_light": "#14356b"
+  },
+  "logo": {
+    "rel_path": "_inputs/photos/logo-clean.png",
+    "bg_removed": true
+  }
+}
